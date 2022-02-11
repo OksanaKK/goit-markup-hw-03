@@ -1,0 +1,221 @@
+:root {
+  --primary-font-family:"Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --primary-text-color-text: #757575;
+  --title-text-color: #212121;
+  --secondary-title-text-color: #ffffff;
+  --secondary-text-color: #2196f3;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color-text);
+}
+
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--accent-color);
+}
+.link:focus {
+  color: var(--accent-color);
+}
+/*====header starts=====*/
+
+.header {
+  background-color: #ffffff;
+}
+
+.company-name {
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.company-name-web {
+  color: var(--secondary-text-color);
+}
+.company-name-studio {
+  color: #000;
+}
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.current{
+  color: var(--secondary-text-color);
+  }
+
+.contacts-link {
+  color: var(--primary-text-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/*====header end=====*/
+/*===main section===*/
+
+/*==moto section===*/
+
+.section-moto {
+  background-color: #2f303a;
+}
+.section-moto-head {
+  color: var(--secondary-title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.section-moto-order-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87x;
+  color: var(--secondary-title-text-color);
+  background-color: var(--secondary-text-color);
+}
+/*==moto-section ends==*/
+
+/*===company qualities==*/
+ 
+.section-qualities-title {
+  color: transparent;
+
+}
+.section-qualities-list-head {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-qualities-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*===company qualities ends==*/
+
+/*===Company Activities===*/
+
+.company-activities {
+  
+}
+.company-activities-head {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*==== Our Team===*/
+
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-section-head {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-section-list-head {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-section-list-text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*===our team end===*/
+
+/*===footer===*/
+.footer-section {
+  background-color: #2f303a;
+}
+.footer-company-name {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-company-name-web {
+  color: var(--secondary-text-color);
+}
+.footer-company-name-studio {
+  color: var(--secondary-title-text-color);
+}
+.footer-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-address {
+  color: var(--secondary-title-text-color);
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/*====portfolio start=====*/
+
+.filter {
+  cursor: pointer;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.filter-btn:hover {
+  color: var(--secondary-title-text-color);
+  background-color: var(--accent-color);
+}
+.projects {
+  color:transparent;
+}
+.projects-list-item-head {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list-item-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
