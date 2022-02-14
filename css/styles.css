@@ -323,7 +323,16 @@ background-color: #2f303a;
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
+
+
 /*====portfolio start=====*/
+
+.portfolio-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .filter {
   cursor: pointer;
@@ -333,23 +342,50 @@ background-color: #2f303a;
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
+.filter-list {
+  display: flex;
+  margin-bottom: 34px;
+}
+.filter-item:not(:only-child) {
+  margin-left: 8px;
+}
+
+.filter-item {
+ 
+}
+
+.filter-btn{
+font-family: var(--primary-font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+background-color:#F5F4FA;
+min-width: 130px;
+padding: 6px 22px;
+border: solid #F5F4FA;
+border-radius: 4px;
+}
 .filter-btn:hover {
   color: var(--secondary-title-text-color);
   background-color: var(--accent-color);
+  
 }
 
-.portfolio-main-section {
+
+
+.projects-list {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .projects-title {
   display: none;
  
 }
 
-.filter-list {
-  display: flex;
-}
-.projects-list-item-head {
+
+  
+  .projects-list-item-head {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
