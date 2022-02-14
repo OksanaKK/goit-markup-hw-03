@@ -12,7 +12,21 @@ body {
   font-family: var(--primary-font-family);
   color: var(--primary-text-color-text);
 }
+h1,h2,h3 {
+  margin-top: 0; 
+  margin-bottom: 0;
+}
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style-type: none;
 }
@@ -24,31 +38,56 @@ body {
 }
 .link:focus {
   color: var(--accent-color);
-}
+  }
+
+  .container {
+  
+    width: 1200px;
+    padding-left: 15px;
+    margin-left: auto;
+    padding-right: 15px;
+    margin-right: auto;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 /*====header starts=====*/
 
-.header {
-  background-color: #ffffff;
+.header-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 0;
+margin-bottom: 0;
 }
 
-.company-name {
+  
+
+.logo {
   font-family: var(--secondary-font-family);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-left: 0;
+  
 }
-.company-name-web {
+.logo-web {
   color: var(--secondary-text-color);
 }
-.company-name-studio {
+.logo-studio {
   color: #000;
 }
 .navigation {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .navigation-link {
@@ -57,26 +96,54 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .current{
   color: var(--secondary-text-color);
   }
 
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 32px
+}
 .contacts-link {
   color: var(--primary-text-color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  
+
 }
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+ 
+  }
 /*====header end=====*/
-/*===main section===*/
+
+
+/*=======main section========*/
 
 /*==moto section===*/
 
-.section-moto {
+.hero {
+  
+  text-align: center;
   background-color: #2f303a;
+  padding: 200px 452px;
+  
+  
+  
 }
-.section-moto-head {
+.hero-head {
+  min-width: 696px;
   color: var(--secondary-title-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -84,21 +151,44 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  
+ 
+  
+  
 }
-.section-moto-order-btn {
+.hero-btn {
+  padding: 10px 32px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87x;
   color: var(--secondary-title-text-color);
   background-color: var(--secondary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
+  
 }
 /*==moto-section ends==*/
 
 /*===company qualities==*/
- 
+
+
+.section-qualities-list {
+  display: flex;
+  justify-content: center;
+    
+}
+.section-qualities-list-item {
+  width: calc((100%-120px)/4);
+}
+.section-qualities-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-qualities-title {
-  color: transparent;
+  display: none;
+  
 
 }
 .section-qualities-list-head {
@@ -115,9 +205,20 @@ body {
 }
 /*===company qualities ends==*/
 
-/*===Company Activities===*/
+/*===Company Activities===*/ 
 
 .company-activities {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+  
+.activities-images-list {
+display: flex;
+margin-bottom: 82px;
+}
+.activities-images-item:not(:last-child) {
+  margin-right: 30px;
   
 }
 .company-activities-head {
@@ -125,14 +226,40 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+  
   letter-spacing: 0.03em;
-}
+  margin-bottom: 50px;
+  }
 /*==== Our Team===*/
 
-.team-section {
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f5f4fa;
+  justify-content: center;
 }
+
+  
+
+.team-section-list {
+  display: flex;
+  }
+
+  .team-section-item {
+    flex-basis: calc((100%-120)/4);
+    border-bottom:3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .team-section-item:not(:last-child) {
+    margin-right:30px ;
+
+  }
+
+ .team-section-item:not(:last-child) {
+   margin-right: 30px;
+
+ }
 .team-section-head {
   color: var(--title-text-color);
   font-weight: 700;
@@ -140,6 +267,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-section-list-head {
   color: var(--title-text-color);
@@ -156,23 +284,30 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+
 /*===our team end===*/
 
 /*===footer===*/
-.footer-section {
-  background-color: #2f303a;
+footer {
+background-color: #2f303a;
 }
-.footer-company-name {
+
+ 
+.footer-logo{
+  display: block;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.footer-company-name-web {
+  margin-bottom: 20px;
+  
+ }
+.footer-logo-web {
   color: var(--secondary-text-color);
 }
-.footer-company-name-studio {
+.footer-logo-studio {
   color: var(--secondary-title-text-color);
 }
 .footer-list {
@@ -202,8 +337,17 @@ body {
   color: var(--secondary-title-text-color);
   background-color: var(--accent-color);
 }
-.projects {
-  color:transparent;
+
+.portfolio-main-section {
+  display: flex;
+}
+.projects-title {
+  display: none;
+ 
+}
+
+.filter-list {
+  display: flex;
 }
 .projects-list-item-head {
   color: var(--title-text-color);
