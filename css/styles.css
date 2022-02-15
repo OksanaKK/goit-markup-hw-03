@@ -351,8 +351,9 @@ footer {
 
 .projects-list-item {
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
+  
 }
 .portfolio-card {
   margin: 20px 24px;
