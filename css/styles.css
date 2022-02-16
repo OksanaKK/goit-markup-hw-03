@@ -14,15 +14,16 @@ body {
 }
 h1,
 h2,
-h3 {
+h3, 
+ul,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+    padding: 0;
+    list-style: none;
 }
 img {
   display: block;
@@ -51,6 +52,18 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*====header starts=====*/
@@ -86,11 +99,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
+  }
 
 .navigation-link {
+  display: block;
+  padding: 32px 0;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -110,9 +123,7 @@ img {
 .contacts {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
-  margin-top: 32px;
-  margin-left: 331px;
+   margin-left: auto;
 }
 .contacts-link {
   color: var(--primary-text-color-text);
@@ -130,20 +141,27 @@ img {
 /*==moto section===*/
 
 .hero {
-  text-align: center;
   background-color: #2f303a;
-  padding: 200px 452px;
+  padding: 200px 0;
+}
+
+.hero-container {
+  text-align: center;
+
+
 }
 .hero-head {
-  min-width: 696px;
+ 
+  width: 696px;
   color: var(--secondary-title-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-btn {
   padding: 10px 32px;
@@ -170,9 +188,8 @@ img {
 .section-qualities-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.section-qualities-title {
-  display: none;
-}
+
+
 .section-qualities-list-head {
   color: var(--title-text-color);
   font-weight: 700;
@@ -180,6 +197,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .section-qualities-list-text {
   font-size: 14px;
@@ -190,15 +208,13 @@ img {
 /*===Company Activities===*/
 
 .company-activities {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding-top: 0;
 }
 
 .activities-images-list {
   display: flex;
-  margin-bottom: 82px;
-}
+
+  }
 .activities-images-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -207,7 +223,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-
+  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
@@ -218,11 +234,10 @@ img {
 
 .team-section-list {
   display: flex;
-  justify-content: space-between;
 }
-
 .team-section-item {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-bottom: solid rgba(0, 0, 0, 0.2);
   border-radius: 0px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -234,6 +249,7 @@ img {
 
 .team-card-text {
   flex-basis: calc((100%-120) / 4);
+  padding: 30px;
 }
 
 .team-section-head {
@@ -253,6 +269,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-section-list-text {
@@ -265,8 +282,9 @@ img {
 /*===our team end===*/
 
 /*===footer===*/
-footer {
+.footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -290,6 +308,9 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer-list-item:not(:last-child){
+  margin-bottom: 9px;
 }
 .footer-address {
   color: var(--secondary-title-text-color);
@@ -316,10 +337,10 @@ footer {
 }
 .filter-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
-.filter-item:not(:only-child) {
+.filter-item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -329,7 +350,7 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   background-color: #f5f4fa;
-  min-width: 130px;
+  min-width: 73px;
   padding: 6px 22px;
   border: solid #f5f4fa;
   border-radius: 4px;
@@ -350,22 +371,23 @@ footer {
 }
 
 .projects-list-item {
-  border: 1px solid #eeeeee;
+  
   margin-left: 30px;
   margin-bottom: 30px;
   
 }
 .portfolio-card {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-right:1px solid #EEEEEE; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projects-list:nth-child(3*0 + 3) {
   margin-right: 30px;
 }
 
-.projects-title {
-  display: none;
-}
+
 
 .projects-list-item-head {
   color: var(--title-text-color);

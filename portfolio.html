@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://github.com/sindresorhus/modern-normalize.git" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
@@ -18,17 +18,17 @@
     <!--header section-->
 
     <header  class="header">
-      <div class="header-container container">
+      <div class=" header-container container">
           <a class="logo link" href="" lang="en"
         ><span class="logo-web link">Web</span
         ><span class="logo-studio link">Studio</span></a>
         <nav class="navigation">
         <ul class="navigation-list list">
           <li class="navigation-list-item">
-            <a class="navigation-link  link" href="index.html">Студия</a>
+            <a class="navigation-link current link" href="index.html">Студия</a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-link current link" href="portfolio.html"
+            <a class="navigation-link link" href="portfolio.html"
               >Портфолио</a>
           </li>
           <li class="navigation-list-item">
@@ -57,9 +57,9 @@
 
     <!--Portfolio main section-->
     <main>
-      <div class="portfolio-container container">
-    <section class="portfolio-section section">
-        <h1 class="projects-title">Projects</h1>
+        <section class="portfolio-section section">
+      <div class="container">
+        <h1 class="visually-hidden">Projects</h1>
         <ul class="filter-list list">
           <li class="filter-item">
             <button class="filter-btn link" type="button">Все</button>
@@ -195,37 +195,35 @@
     
     </main>
 
-    <footer>
-     
-      <section class="footer-section section container">
-        <a class="footer-logo link" href="" lang="en"
-          ><span class="footer-logo-web link">Web</span
-          ><span class="footer-logo-studio link">Studio</span></a
-        >
-        <address id="contacts">
-          <ul class="footer-list list">
-            <li class="footer-list-item">
-              <a
-                class="footer-address link"
-                href="https://goo.gl/maps/29DhK9MTSFLu9xUr9target="
-                target="_blank"
-                >г. Киев, бульвар Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer-list-item">
-              <a class="footer-link link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="footer-link link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </section>
-    </div>
-    </footer>
+    <footer class="footer">
+      <div class="footer-container container">
+       <a class="footer-logo link" href="" lang="en"
+         ><span class="footer-logo-web link">Web</span
+         ><span class="footer-logo-studio link">Studio</span></a
+       >
+       <address id="contacts">
+         <ul class="footer-list list">
+           <li class="footer-list-item">
+             <a
+               class="footer-address link"
+               href="https://goo.gl/maps/29DhK9MTSFLu9xUr9target="
+               target="_blank"
+               >г. Киев, бульвар Леси Украинки, 26</a
+             >
+           </li>
+           <li class="footer-list-item">
+             <a class="footer-link link" href="mailto:info@example.com"
+               >info@example.com</a
+             >
+           </li>
+           <li class="footer-list-item">
+             <a class="footer-link link" href="tel:+380991111111"
+               >+38 099 111 11 11</a
+             >
+           </li>
+         </ul>
+       </address>
+     </div>
+   </footer>
   </body>
 </html>
